@@ -15,7 +15,7 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/posts/sitemap/</loc>
+    <loc>http://localhost:1313/posts/sitemap/sitemap/</loc>
     <lastmod>2025-06-28T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

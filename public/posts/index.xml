@@ -21,10 +21,10 @@
     
     <item>
       <title>サイトマップ</title>
-      <link>http://localhost:1313/posts/sitemap/</link>
+      <link>http://localhost:1313/posts/sitemap/sitemap/</link>
       <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/posts/sitemap/</guid>
+      <guid>http://localhost:1313/posts/sitemap/sitemap/</guid>
       <description></description>
       
     </item>
