@@ -9,26 +9,9 @@ displayName = "JA"
 isoCode = "ja"
 rtl = false
 dateFormat = "2 January 2006"
-logo = "logo.PNG"
-
-[[params.author.links]]
-Misskey = "https://misskey.io/@eimmm8"
 
 [[params.author.links]]
 twitter = "https://x.com/eimmm8"
-
-[[params.author.links]]
-BLOG = "https://blog.subaseka.net"
-
-[[params.author.links]]
-Wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
-
-[[params.author.links]]
-email = "subaseka1231@gmail.com"
-
-[[params.author.links]]
-link = "https://linktr.ee/eimmm8"
-
 
 
 ["params.author"]
