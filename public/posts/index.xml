@@ -10,16 +10,6 @@
     <lastBuildDate>Sat, 28 Jun 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>new-article</title>
-      <link>http://localhost:1313/posts/1751088255601-new-article/</link>
-      <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/posts/1751088255601-new-article/</guid>
-      <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/posts/1751088255601-new-article/featured.png" />
-    </item>
-    
-    <item>
       <title>サイトマップ</title>
       <link>http://localhost:1313/posts/sitemap/</link>
       <pubDate>Sat, 28 Jun 2025 00:00:00 +0000</pubDate>
