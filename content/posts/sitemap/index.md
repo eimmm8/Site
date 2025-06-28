@@ -5,7 +5,6 @@ draft: false
 ---
 各ページにはこちらから遷移できます
 
-## SNS
 ### Misskey
 基本的にここにいます
 
@@ -20,14 +19,14 @@ draft: false
 @eimmm8
 {{< /button >}}
 
-## BLOG
+### BLOG
 極稀に気まぐれ更新
 
 {{< button href="https://blog.subaseka.net" target="_self" >}}
 備忘録
 {{< /button >}}
 
-## Wavebox
+### Wavebox
 匿名メッセージはこちらから
 
 {{< button href="https://wavebox.me/wave/60qinvl8w8hho3dq/" target="_self" >}}
