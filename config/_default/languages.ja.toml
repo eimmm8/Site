@@ -11,16 +11,19 @@ rtl = false
 dateFormat = "2 January 2006"
 logo = img/logo.PNG
 
-[params.author.links]
-misskey = "https://misskey.io/@eimmm8"
-twitter = "https://x.com/eimmm8"
-blog = "https://blog.subaseka.net/"
-wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
-link = "https://linktr.ee/eimmm8"
-mail = "subaseka1231@gmail.com"
+
 
 
 ["params.author"]
 name = "えいむ"
 image = "profile.jpg"
 headline = "インターネット地縛霊"
+
+links = [
+ { misskey = "https://misskey.io/@eimmm8" },
+ { twitter = "https://x.com/eimmm8" },
+ { blog = "https://blog.subaseka.net/" },
+ { wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/" },
+ { link = "https://linktr.ee/eimmm8" },
+ { mail = "subaseka1231@gmail.com" }
+ ]
