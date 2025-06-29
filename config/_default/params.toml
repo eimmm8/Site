@@ -32,12 +32,12 @@ showScrollToTop = true
 
 [homepage]
 layout = "background"
-showRecent = true
+showRecent = false
 showRecentItems = 5
 showMoreLink = false
 showMoreLinkDest = "/posts/"
-cardView = false
-cardViewScreenWidth = false
+cardView = true
+cardViewScreenWidth = true
 layoutBackgroundBlur = false
 disableHeroImageFilter = false
 
