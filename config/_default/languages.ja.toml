@@ -27,14 +27,8 @@ wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
 [[params.author.links]]
 link = "https://linktr.ee/eimmm8"
 
-[[params.author.links]]
-email = "subaseka1231@gmail.com"
-
-
-
-
-
 ["params.author"]
 name = "えいむ"
 image = "profile.jpg"
-bio = "インターネット地縛霊"
+bio = "Mail：subaseka1231★gmail.com"
+headline = "インターネット地縛霊"
