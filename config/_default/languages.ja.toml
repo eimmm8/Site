@@ -24,8 +24,6 @@ blog = "https://blog.subaseka.net/"
 [[params.author.links]]
 wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
 
-[[params.author.links]]
-link = "https://linktr.ee/eimmm8"
 
 ["params.author"]
 name = "えいむ"
