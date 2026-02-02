@@ -19,9 +19,6 @@ misskey = "https://misskey.io/@eimmm8"
 twitter = "https://x.com/eimmm8"
 
 [[params.author.links]]
-blog = "https://blog.subaseka.net/"
-
-[[params.author.links]]
 wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
 
 
