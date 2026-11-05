@@ -307,3 +307,9 @@ body:has(.link-home) #main-content { min-height: 100vh; }
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; }
 }
+
+/* 全ページで標準ヘッダーを非表示 */
+.main-menu,
+#site-header {
+ display: none !important;
+ }
