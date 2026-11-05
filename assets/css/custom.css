@@ -12,6 +12,43 @@
 
 html { scroll-behavior: smooth; }
 
+/* Keep articles and archives on a readable, opaque paper surface. */
+body:not(:has(.link-home)) #main-content {
+  margin: 1.5rem 0;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  border: 1px solid #dacc89;
+  border-radius: .35rem;
+  background: #e8ecee;
+  color: #344b5e;
+  color-scheme: light;
+}
+body:not(:has(.link-home)) #main-content :is(h1, h2, h3, h4, h5, h6, .prose) {
+  color: #344b5e;
+}
+body:not(:has(.link-home)) #main-content .prose {
+  --tw-prose-body: #344b5e;
+  --tw-prose-headings: #344b5e;
+  --tw-prose-links: #3f5d75;
+  --tw-prose-bold: #344b5e;
+  --tw-prose-invert-body: #344b5e;
+  --tw-prose-invert-headings: #344b5e;
+  --tw-prose-invert-links: #3f5d75;
+  --tw-prose-invert-bold: #344b5e;
+}
+.page-home-nav { position: relative; z-index: 20; margin: 0 0 1.5rem; }
+.page-home-nav a {
+  display: inline-block;
+  padding: .55rem 1rem;
+  border: 1px solid #7894ab;
+  border-radius: .3rem;
+  background: #e8ecee;
+  color: #344b5e;
+  font-size: .85rem;
+  text-decoration: none;
+}
+.page-home-nav a:hover { background: #dacc89; }
+.page-home-nav a:focus-visible { outline: 2px solid #344b5e; outline-offset: 3px; }
+
 html:not(.dark) body,
 .dark body {
   min-height: 100vh;
