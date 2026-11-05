@@ -2,15 +2,15 @@ disabled = false
 languageCode = "ja"
 languageName = "Japanese"
 weight = 1
-title = "まとめサイト"
+title = "えいむ | illustration & fanworks"
 
 [params]
 displayName = "JA"
 isoCode = "ja"
 rtl = false
-dateFormat = "2 January 2006"
+dateFormat = "2006.01.02"
 logo = "logo.PNG"
-description = ""
+description = "えいむのイラスト・同人誌・活動情報をまとめた個人サイトです。"
 
 [[params.author.links]]
 misskey = "https://misskey.io/@eimmm8"
@@ -25,4 +25,4 @@ wavebox = "https://wavebox.me/wave/60qinvl8w8hho3dq/"
 ["params.author"]
 name = "えいむ"
 image = "profile.jpg"
-headline = "Mail：subaseka1231★gmail.com"
+headline = "illustration & fanworks"

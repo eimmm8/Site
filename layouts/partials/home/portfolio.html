@@ -1,0 +1,67 @@
+{{ $profile := resources.Get .Site.Params.Author.image }}
+{{ $releases := where (where .Site.RegularPages.ByDate.Reverse "Section" "posts") "Params.new_release" true }}
+{{ $latest := index $releases 0 }}
+
+<div class="link-home">
+  <section class="link-window" aria-labelledby="site-title">
+    <header class="link-window__bar">
+      <span>まとめさいと</span>
+      <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    </header>
+
+    <section class="profile-block">
+      {{ with $profile }}
+        {{ $avatar := .Fill "180x180 Center q92" }}
+        <img class="profile-avatar nozoom" src="{{ $avatar.RelPermalink }}" width="180" height="180" alt="えいむのプロフィール画像">
+      {{ end }}
+      <div>
+        <p class="eyebrow">ILLUSTRATION &amp; FANWORKS</p>
+        <h3 id="site-title">えいむのまとめ</h3>
+        <p>えいむです。各種SNSなどへのリンクと、同人誌通販のお知らせをまとめています。</p>
+      </div>
+    </section>
+
+    {{ with $latest }}
+      {{ $featured := .Resources.GetMatch "*feature*" }}
+      <section class="release-block" aria-labelledby="release-title">
+        <div class="section-label"><span>NEW RELEASE</span><span>{{ .Date.Format "2006.01.02" }}</span></div>
+        <div class="release-card">
+          {{ with $featured }}
+            {{ $cover := .Fill "720x480 Center q92" }}
+            <a class="release-cover" href="{{ $latest.Params.booth }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $latest.Title }}をBOOTHで見る">
+              <img class="nozoom" src="{{ $cover.RelPermalink }}" width="720" height="480" alt="{{ $latest.Title }}の画像">
+            </a>
+          {{ end }}
+          <div class="release-copy">
+            <p class="release-number">01 / LATEST BOOK</p>
+            <h2 id="release-title">{{ .Title }}</h2>
+            {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+            <a class="booth-button" href="{{ .Params.booth }}" target="_blank" rel="noopener noreferrer">
+              BOOTHで見る <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    {{ end }}
+
+    <nav class="link-list" aria-label="各種リンク">
+      <a class="link-row link-row--plum" href="https://eeeim8.booth.pm/" target="_blank" rel="noopener noreferrer">
+        <span><b>01</b> BOOTH</span><i aria-hidden="true">→</i>
+      </a>
+      <a class="link-row link-row--peach" href="https://x.com/eimmm8" target="_blank" rel="me noopener noreferrer">
+        <span><b>02</b> X / Twitter</span><i aria-hidden="true">→</i>
+      </a>
+      <a class="link-row link-row--rose" href="https://misskey.io/@eimmm8" target="_blank" rel="me noopener noreferrer">
+        <span><b>03</b> Misskey</span><i aria-hidden="true">→</i>
+      </a>
+      <a class="link-row link-row--sand" href="https://wavebox.me/wave/60qinvl8w8hho3dq/" target="_blank" rel="noopener noreferrer">
+        <span><b>04</b> Wavebox</span><i aria-hidden="true">→</i>
+      </a>
+    </nav>
+
+    <footer class="link-footer">
+      <p>Contact：subaseka1231★gmail.com<br><small>★を@に置き換えてください</small></p>
+      <p>© EIM</p>
+    </footer>
+  </section>
+</div>
