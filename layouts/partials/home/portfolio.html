@@ -5,7 +5,7 @@
 <div class="link-home">
   <section class="link-window" aria-labelledby="site-title">
     <header class="link-window__bar">
-      <span>まとめさいと</span>
+      <span>えいむのさいと</span>
       <span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span>
     </header>
 
@@ -15,9 +15,9 @@
         <img class="profile-avatar nozoom" src="{{ $avatar.RelPermalink }}" width="180" height="180" alt="えいむのプロフィール画像">
       {{ end }}
       <div>
-        <p class="eyebrow">ILLUSTRATION &amp; FANWORKS</p>
-        <h3 id="site-title">えいむのまとめ</h3>
-        <p>えいむです。各種SNSなどへのリンクと、同人誌通販のお知らせをまとめています。</p>
+        <p class="eyebrow">FANWORKS</p>
+        <h3 id="site-title">えいむです</h3>
+        <p>各種SNSへのリンクと、二次創作同人誌通販のお知らせまとめ。</p>
       </div>
     </section>
 
@@ -28,19 +28,21 @@
         <div class="release-card">
           {{ with $featured }}
             {{ $cover := .Fill "720x480 Center q92" }}
-            <a class="release-cover" href="{{ $latest.Params.booth }}" target="_blank" rel="noopener noreferrer" aria-label="{{ $latest.Title }}をBOOTHで見る">
+            <a class="release-cover" href="{{ $latest.RelPermalink }}" aria-label="{{ $latest.Title }}の本文を読む">
               <img class="nozoom" src="{{ $cover.RelPermalink }}" width="720" height="480" alt="{{ $latest.Title }}の画像">
             </a>
           {{ end }}
           <div class="release-copy">
             <p class="release-number">01 / LATEST BOOK</p>
-            <h2 id="release-title">{{ .Title }}</h2>
+            <h2 id="release-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+            <a class="article-link" href="{{ .RelPermalink }}">本文を読む <span aria-hidden="true">→</span></a>
             <a class="booth-button" href="{{ .Params.booth }}" target="_blank" rel="noopener noreferrer">
               BOOTHで見る <span aria-hidden="true">→</span>
             </a>
           </div>
         </div>
+        <a class="archive-link" href="{{ "posts/" | relURL }}">過去のお知らせ <span aria-hidden="true">→</span></a>
       </section>
     {{ end }}
 
