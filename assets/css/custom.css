@@ -12,6 +12,15 @@
 
 html { scroll-behavior: smooth; }
 
+/* Card titles use ink, not the theme's near-background text colour. */
+#main-content .archive-card-title { color: #344b5e !important; }
+
+/* Tighten both line height and the gaps between Markdown paragraphs. */
+#main-content .article-content { line-height: 1.65; }
+#main-content .article-content p { margin-top: .65em; margin-bottom: .65em; }
+#main-content .article-content :is(ul, ol) { margin-top: .65em; margin-bottom: .65em; }
+#main-content .article-content li { margin-top: .2em; margin-bottom: .2em; }
+
 /* Keep articles and archives on a readable, opaque paper surface. */
 body:not(:has(.link-home)) #main-content {
   margin: 1.5rem 0;
@@ -190,6 +199,7 @@ body:has(.link-home) #main-content { min-height: 100vh; }
   min-height: 14.5rem;
   margin: 0;
   object-fit: cover;
+  object-position: center top;
   transition: transform .25s ease;
 }
 .release-cover:hover img { transform: scale(1.025); }
@@ -211,7 +221,7 @@ body:has(.link-home) #main-content { min-height: 100vh; }
 .release-copy h2 {
   margin: 0;
   color: var(--ink);
-  font-size: clamp(1.2rem, 4vw, 1.7rem);
+  font-size: clamp(1.05rem, 3vw, 1.3rem);
   line-height: 1.45;
 }
 
@@ -299,7 +309,7 @@ body:has(.link-home) #main-content { min-height: 100vh; }
   .profile-avatar { width: 4.6rem; height: 4.6rem; }
   .profile-block h1 { font-size: clamp(2.75rem, 15vw, 4rem); }
   .release-card { grid-template-columns: 1fr; }
-  .release-cover img { aspect-ratio: 3 / 2; min-height: 0; }
+  .release-cover img { aspect-ratio: 12 / 7; min-height: 0; }
   .release-copy { min-height: 12rem; }
   .link-footer { align-items: start; flex-direction: column; }
 }

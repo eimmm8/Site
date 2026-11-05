@@ -27,9 +27,9 @@
         <div class="section-label"><span>NEW RELEASE</span><span>{{ .Date.Format "2006.01.02" }}</span></div>
         <div class="release-card">
           {{ with $featured }}
-            {{ $cover := .Fill "720x480 Center q92" }}
+            {{ $cover := .Fill "720x420 Top q92" }}
             <a class="release-cover" href="{{ $latest.RelPermalink }}" aria-label="{{ $latest.Title }}の本文を読む">
-              <img class="nozoom" src="{{ $cover.RelPermalink }}" width="720" height="480" alt="{{ $latest.Title }}の画像">
+              <img class="nozoom" src="{{ $cover.RelPermalink }}" width="720" height="420" alt="{{ $latest.Title }}の画像">
             </a>
           {{ end }}
           <div class="release-copy">
@@ -50,11 +50,11 @@
       <a class="link-row link-row--plum" href="https://eeeim8.booth.pm/" target="_blank" rel="noopener noreferrer">
         <span><b>01</b> BOOTH</span><i aria-hidden="true">→</i>
       </a>
-      <a class="link-row link-row--peach" href="https://x.com/eimmm8" target="_blank" rel="me noopener noreferrer">
-        <span><b>02</b> X / Twitter</span><i aria-hidden="true">→</i>
+      <a class="link-row link-row--peach" href="https://misskey.io/@eimmm8" target="_blank" rel="me noopener noreferrer">
+        <span><b>02</b> Misskey</span><i aria-hidden="true">→</i>
       </a>
-      <a class="link-row link-row--rose" href="https://misskey.io/@eimmm8" target="_blank" rel="me noopener noreferrer">
-        <span><b>03</b> Misskey</span><i aria-hidden="true">→</i>
+      <a class="link-row link-row--rose" href="https://x.com/eimmm8" target="_blank" rel="me noopener noreferrer">
+        <span><b>03</b> X / Twitter</span><i aria-hidden="true">→</i>
       </a>
       <a class="link-row link-row--sand" href="https://wavebox.me/wave/60qinvl8w8hho3dq/" target="_blank" rel="noopener noreferrer">
         <span><b>04</b> Wavebox</span><i aria-hidden="true">→</i>
